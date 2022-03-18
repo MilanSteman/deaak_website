@@ -1,0 +1,21 @@
+@import "../util/mixins";
+
+.section-text {
+    margin: 5rem 2rem 0;
+    padding-bottom: 7.5rem;
+    border-bottom: 1px solid $dark;
+    @include grid-col-12;
+
+    &.right p {
+        grid-column: 6 / -1;
+    }
+
+    p {
+        @include body-copy-32;
+        grid-column: span 7;
+
+        + p {
+            margin-top: 3rem;
+        }
+    }
+}

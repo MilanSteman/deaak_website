@@ -1,0 +1,45 @@
+@import "../util/mixins";
+
+.section-cards {
+    margin: 5rem 2rem 0;
+    padding-bottom: 7.5rem;
+    border-bottom: 1px solid $dark;
+    @include grid-col-12;
+
+    h1 {
+        @include headline-64;
+        grid-column: 1 / -1;
+        margin-bottom: 5rem;
+    }
+
+    a.card-big {
+        &.grid-col-6 {
+            grid-column: span 6;
+        }
+
+        &.grid-col-3 {
+            grid-column: span 3;
+        }
+
+        article {
+
+            img {
+                max-height: 44rem;
+            }
+            
+            h2 {
+                @include body-copy-32;
+                color: $dark;
+                margin-top: 1.5rem;
+            }
+
+            p {
+                @include body-copy-18;
+                color: $gray;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,41 @@
+@import "../util/mixins";
+
+.section-hero {
+    background-image: url("../images/hero.png");
+    padding: 4rem;
+    margin: 2rem;
+    min-height: 873px;
+    height: calc(100vh - 4rem);
+    position: relative;
+
+    nav {
+        display: flex;
+        align-items: center;
+        
+        ul {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            
+            li {
+
+                + li {
+                    margin-left: 4rem;
+                }
+
+                a {
+                    @include body-copy-18;
+                    color: $light;
+                }
+            }
+        }
+    }
+
+    h1 {
+        position: absolute;
+        bottom: 4rem;
+        @include headline-96;
+        color: $light;
+        max-width: 36rem;
+    }
+}

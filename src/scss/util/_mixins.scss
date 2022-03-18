@@ -1,0 +1,38 @@
+@import "./variables";
+
+@mixin body-copy {
+    line-height: $default-line-height;
+    font-weight: $roman;
+}
+
+@mixin headline {
+    line-height: $headline-line-height;
+    font-weight: $roman;
+    overflow: revert;
+}
+
+@mixin body-copy-18 {
+    font-size: $size-18;
+    @include body-copy;
+}
+
+@mixin body-copy-32 {
+    font-size: $size-32;
+    @include body-copy;
+}
+
+@mixin headline-64 {
+    font-size: $size-64;
+    @include headline;
+}
+
+@mixin headline-96 {
+    font-size: $size-96;
+    @include headline;
+}
+
+@mixin grid-col-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0 1.5rem;
+}

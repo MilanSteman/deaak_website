@@ -1,0 +1,167 @@
+/* Global imports */
+/* Global Styling */
+/* Colors */
+/* Typography */
+/* Colors */
+/* Typography */
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-decoration: none;
+  list-style: none;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  padding-bottom: 10rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Component imports */
+/* Colors */
+/* Typography */
+.section-hero {
+  background-image: url("../images/hero.png");
+  padding: 4rem;
+  margin: 2rem;
+  min-height: 873px;
+  height: calc(100vh - 4rem);
+  position: relative;
+}
+
+.section-hero nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-hero nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+
+.section-hero nav ul li + li {
+  margin-left: 4rem;
+}
+
+.section-hero nav ul li a {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.section-hero h1 {
+  position: absolute;
+  bottom: 4rem;
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 500;
+  overflow: revert;
+  color: #ffffff;
+  max-width: 36rem;
+}
+
+/* Colors */
+/* Typography */
+.section-text {
+  margin: 5rem 2rem 0;
+  padding-bottom: 7.5rem;
+  border-bottom: 1px solid #000000;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  gap: 0 1.5rem;
+}
+
+.section-text.right p {
+  grid-column: 6 / -1;
+}
+
+.section-text p {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
+  grid-column: span 7;
+}
+
+.section-text p + p {
+  margin-top: 3rem;
+}
+
+/* Colors */
+/* Typography */
+.section-cards {
+  margin: 5rem 2rem 0;
+  padding-bottom: 7.5rem;
+  border-bottom: 1px solid #000000;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  gap: 0 1.5rem;
+}
+
+.section-cards h1 {
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 500;
+  overflow: revert;
+  grid-column: 1 / -1;
+  margin-bottom: 5rem;
+}
+
+.section-cards a.card-big.grid-col-6 {
+  grid-column: span 6;
+}
+
+.section-cards a.card-big.grid-col-3 {
+  grid-column: span 3;
+}
+
+.section-cards a.card-big article img {
+  max-height: 44rem;
+}
+
+.section-cards a.card-big article h2 {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #000000;
+  margin-top: 1.5rem;
+}
+
+.section-cards a.card-big article p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #505050;
+  margin-top: 1rem;
+}
+/*# sourceMappingURL=main.css.map */
