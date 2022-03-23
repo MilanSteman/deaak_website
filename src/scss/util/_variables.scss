@@ -2,11 +2,12 @@
 
 $light: #ffffff;
 $dark: #000000;
-$gray: #505050;
+$gray: #757575;
 
 /* Typography */
 
-$main-font: neue-haas-grotesk-display, sans-serif;
+$display-font: neue-haas-grotesk-display, sans-serif;
+$body-font: neue-haas-grotesk-text, sans-serif;
 
 // Sizes
 $size-18: 1.125rem;
@@ -19,4 +20,5 @@ $default-line-height: 1.5;
 $headline-line-height: 1;
 
 // Weights
-$roman: 500;
+$body-roman: 400;
+$display-roman: 500;

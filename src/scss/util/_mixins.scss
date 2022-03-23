@@ -2,12 +2,13 @@
 
 @mixin body-copy {
     line-height: $default-line-height;
-    font-weight: $roman;
+    font-weight: $body-roman;
 }
 
 @mixin headline {
     line-height: $headline-line-height;
-    font-weight: $roman;
+    font-weight: $display-roman;
+    font-family: $display-font;
     overflow: revert;
 }
 

@@ -10,7 +10,7 @@
 	overflow-x: hidden;
 	text-decoration: none;
 	list-style: none;
-    font-family: $main-font;
+    font-family: $body-font;
 	background-repeat: no-repeat;
     background-size: cover;
 }
@@ -18,7 +18,7 @@
 body {
     background-color: $light;
     color: $dark;
-	padding-bottom: 10rem;
+	padding-bottom: 2rem;
 }
 
 html {

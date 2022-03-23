@@ -6,10 +6,22 @@
     border-bottom: 1px solid $dark;
     @include grid-col-12;
 
-    h1 {
-        @include headline-64;
+    header {
         grid-column: 1 / -1;
+        display: flex;
+        align-items: flex-end;
         margin-bottom: 5rem;
+        overflow: hidden;
+
+        h1 {
+            @include headline-64;
+        }
+
+        a {
+            margin-left: auto;
+            color: $dark;
+            text-decoration: underline;
+        }
     }
 
     a.card-big {
@@ -22,13 +34,14 @@
         }
 
         article {
-
             img {
                 max-height: 44rem;
             }
-            
+
             h2 {
                 @include body-copy-32;
+                font-family: $display-font;
+                font-weight: $display-roman;
                 color: $dark;
                 margin-top: 1.5rem;
             }
@@ -40,6 +53,4 @@
             }
         }
     }
-
-
 }

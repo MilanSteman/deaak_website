@@ -1,0 +1,43 @@
+body > footer {
+    margin: 2rem;
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        ul {
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+
+            li {
+                + li {
+                    margin-left: 4rem;
+                }
+
+                a {
+                    @include body-copy-18;
+                    color: $dark;
+                }
+            }
+        }
+    }
+
+    ul {
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+
+        li {
+            + li {
+                margin-left: 2rem;
+            }
+
+            a {
+                @include body-copy;
+                font-size: .875rem;
+                color: $gray;
+            }
+        }
+    }
+}
